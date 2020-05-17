@@ -1,9 +1,9 @@
 //
 //  BRBase58.c
-//  elicoinwallet-core
+//  rtidcoinwallet-core
 //
 //  Created by Aaron Voisine on 9/15/15.
-//  Copyright (c) 2015 elicoinwallet LLC
+//  Copyright (c) 2020 rtidcoinwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

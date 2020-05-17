@@ -2,7 +2,7 @@
 //  BRMerkleBlock.c
 //
 //  Created by Aaron Voisine on 8/6/15.
-//  Copyright (c) 2015 elicoinwallet LLC
+//  Copyright (c) 2020 rtidcoinwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +33,7 @@
 #include "BRChainParams.h"
 #include "ethereum/util/BRUtilMath.h"
 
-// elicoin MIN_DIFF: 000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+// rtidcoin MIN_DIFF: 000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 // 0x1d00ffff ->     0x00000000ffff0000000000000000000000000000000000000000000000000000
 // 0x20000fff ->     0x000fff0000000000000000000000000000000000000000000000000000000000          (0x20 = 64 positions    and   000fff = prefix )
 // 0x20001000 ->     0x0010000000000000000000000000000000000000000000000000000000000000          (0x20 = 64 positions    and   000fff = prefix )
@@ -143,7 +143,7 @@ BRMerkleBlock *BRMerkleBlockParse(const uint8_t *buf, size_t bufLen)
             if (block->flags) memcpy(block->flags, &buf[off], len);
         }
 
-        // Elicoin yescryptR16 POW hash  ... set computeYescryptR16=1 for activation of YescryptR16 computation
+        // Rtidcoin yescryptR16 POW hash  ... set computeYescryptR16=1 for activation of YescryptR16 computation
         uint8_t computeYescryptR16 = 0;
         if(computeYescryptR16){
           char input_buffer[80];
@@ -317,7 +317,7 @@ int BRMerkleBlockIsValid(const BRMerkleBlock *block, uint32_t currentTime)
         // if (block->blockHash.u8[i] > t.u8[i]) r = 0;
     // }
 
-    // Elicoin yescryptR16 POW check ... if you want to check yescryptR16 set also the variable 'computeYescryptR16' to 1
+    // Rtidcoin yescryptR16 POW check ... if you want to check yescryptR16 set also the variable 'computeYescryptR16' to 1
     // for (int i = sizeof(t) - 1; r && i >= 0; i--) { // check yescryptR16 proof-of-work
     //     if (block->powHash.u8[i] < t.u8[i]) break;
     //     if (block->powHash.u8[i] > t.u8[i]) r = 0;
@@ -354,7 +354,7 @@ int BRMerkleBlockVerifyDifficultyDarkGravityWave(const BRMerkleBlock *block, con
 
     uint32_t index = block->height-1;
     uint32_t nPastBlocks = 24;
-    uint32_t nPowTargetSpacing = 1 * 60; // Elicoin full node - chainparams.cpp
+    uint32_t nPowTargetSpacing = 1 * 10; // Rtidcoin full node - chainparams.cpp
 
     // make sure we have at least (nPastBlocks + 1) blocks
     if(index <= nPastBlocks || index <= lastCheckpointIndex + nPastBlocks){

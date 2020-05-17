@@ -1,5 +1,5 @@
-//  Created by Ed Gamble on 1/23/2018
-//  Copyright (c) 2018 elicoinwallet LLC.
+//  Created by Ed Gamble on 1/23/2020
+//  Copyright (c) 2020 rtidcoinwallet LLC.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

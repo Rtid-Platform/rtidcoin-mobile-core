@@ -1,9 +1,9 @@
 //
 //  BREthereumNetwork
-//  elicoinwallet-core Ethereum
+//  rtidcoinwallet-core Ethereum
 //
 //  Created by Ed Gamble on 3/13/18.
-//  Copyright (c) 2018 elicoinwallet LLC
+//  Copyright (c) 2020 rtidcoinwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

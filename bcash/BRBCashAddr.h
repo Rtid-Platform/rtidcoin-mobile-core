@@ -1,9 +1,9 @@
 //
 //  BRBCashAddr.h
-//  elicoinwallet-core
+//  rtidcoinwallet-core
 //
 //  Created by Aaron Voisine on 1/20/18.
-//  Copyright (c) 2018 elicoinwallet LLC
+//  Copyright (c) 2020 rtidcoinwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
